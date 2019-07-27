@@ -1,0 +1,99 @@
+.more-info {
+  display: none;
+}
+
+.more-info__input {
+  font: inherit;
+
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .more-info {
+    position: absolute;
+    top: 77.5%;
+    right: 10px;
+    z-index: 100;
+
+    display: block;
+    width: 570px;
+    padding: 20px;
+
+    background-color: #ffffff;
+  }
+
+  .more-info__container {
+    position: relative;
+
+    width: 100%;
+    min-height: 276px; //для сетки
+    padding: 46px 48px;
+    border: 1px solid #c8dcba;
+  }
+
+  .more-info__text {
+    width: 175px;
+    margin: 0 0 45px 0;
+
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .more-info__inputs {
+    display: flex;
+  }
+
+  .more-info__name {
+    margin-right: 30px;
+  }
+
+  .more-info__input {
+    width: 200px;
+
+    color: #c8dcba;
+    font-size: 14px;
+    line-height: 20px;
+
+    border-bottom: 1px solid #c8dcba;
+
+    &::placeholder {
+      color: #c8dcba;
+    }
+  }
+
+  .more-info__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 250px;
+    padding: 19px;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #7eb252;
+    border: none;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 41%;
+      right: 15%;
+
+      width: 32px;
+      height: 8px;
+
+      background-image: url("../../img/arrow.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

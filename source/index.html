@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Pilates</title>
-  <link rel="preload" href="fonts/roboto-light.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="anonymous">
+  <title>SwedishBitter</title>
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -16,216 +16,53 @@
   <header class="page-header">
     <div class="page-header__top">
       <a class="page-header__logo">
-        <img src="img/logo.png" width="38px" height="31px">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source media="(min-width: 744px)" srcset="img/logo-tablet.png">
+          <img class="page-header__logo-img" src="img/logo-mob.png">
+        </picture>
+        <span class="page-header__span page-header__span--delivery">Доставка по всей России</span>
       </a>
-      <a class="page-header__tel" href="tel:+79183650707">+7 918 365 07 07</a>
+      <div class="page-header__tel">
+        <a class="page-header__tel-no" href="tel:88000000000">8 800 000-00-00</a>
+        <span class="page-header__span page-header__span--tel">Звонок бесплатный</span>
+      </div>
     </div>
-    <div class="main-nav">
-      <input class="visually-hidden" id="toggle" type="checkbox">
-      <label class="main-nav__button" for="toggle"><span></span></label>
-      <nav class="main-nav__container">
-        <ul class="main-nav__list">
-          <li><a class="main-nav__item" href="#">О пилатесе</a></li>
-          <li><a class="main-nav__item" href="#">Расписание и стоимость</a></li>
-          <li><a class="main-nav__item" href="#">Как проходят занятия</a></li>
-          <li><a class="main-nav__item" href="#">Отзывы</a></li>
-          <li><a class="main-nav__item" href="#">Контакты</a></li>
-        </ul>
-      </nav>
+    <div class="page-header__title">
+      <div class="page-header__title-container">
+        <h1><span>Сбор трав</span>Шведская горечь</h1>
+        <p class="page-header__title-description">Не имеет аналогов в мире по оздоровительной силе и широте лечебных
+          свойств</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/pack-desktop.webp">
+        <source type="image/webp" media="(min-width: 744px)" srcset="img/pack-tablet.webp">
+        <source type="image/webp" srcset="img/pack-mob.webp">
+        <source media="(min-width: 1200px)" srcset="img/pack-desktop.jpg">
+        <source media="(min-width: 744px)" srcset="img/pack-tablet.jpg">
+        <img class="page-header__title-img" src="img/pack-mob.jpg" alt="Фотогорафия упаковки Шведская горечь">
+      </picture>
     </div>
-    <div class="page-header__bottom">
-      <h1 class="page-header__title">Студия пилатеса</h1>
-      <p class="page-header__description">Твое здоровое тело через 10 занятий</p>
-      <a class="page-header__link" href="#">Смотреть расписание</a>
+    <div class="page-header__more">
+      <a class="page-header__more-link" href="more-info.html">Узнать больше</a>
+      <form class="more-info" action="https://echo.test.ru/" method="post">
+        <div class="more-info__container">
+          <p class="more-info__text">Узнайте подробнее о бальзаме</p>
+          <div class="more-info__inputs">
+            <label class="more-info__name">
+              <input class="more-info__input" type="text" placeholder="Имя">
+            </label>
+            <label class="more-info__tel">
+              <input class="more-info__input" type="tel" placeholder="Телефон">
+            </label>
+          </div>
+          <button class="more-info__button" type="submit">Узнать</button>
+        </div>
+      </form>
     </div>
   </header>
-  <main class="page-main">
-    <section class="about">
-      <h2 class="about__title">&mdash; О пилатесе</h2>
-      <p class="about__description">Пилатес соединяет элементы растяжки
-        с элементами силовой тренировки</p>
-      <p class="about__description">Комплекс упражнений укрепляет мышцы пресса
-        и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет
-        от дискомфорта в позвоночнике</p>
-      <a class="about__link" href="#">Подробнее ></a>
-    </section>
-    <section class="prices">
-      <h2 class="prices__title">&mdash; Расписание и стоимость</h2>
-      <ul class="prices__list">
-        <li class="prices__item">
-          <p class="prices__level">
-            <span>Уровень</span>
-            Новичок
-          </p>
-          <table class="prices__table">
-            <tr>
-              <td>пн</td>
-              <td>9:00&mdash;10:00</td>
-            </tr>
-            <tr>
-              <td>ср</td>
-              <td>9:00&mdash;10:00</td>
-            </tr>
-            <tr>
-              <td>пт</td>
-              <td>9:00&mdash;10:00</td>
-            </tr>
-          </table>
-          <a class="prices__sign-up" href="#">Записаться</a>
-        </li>
-        <li class="prices__item">
-          <p class="prices__level">
-            <span>Уровень</span>
-            Профи
-          </p>
-          <table class="prices__table">
-            <tr>
-              <td>пн</td>
-              <td>18:15&mdash;19:45</td>
-            </tr>
-            <tr>
-              <td>ср</td>
-              <td>18:15&mdash;19:45</td>
-            </tr>
-            <tr>
-              <td>пт</td>
-              <td>18:15&mdash;19:45</td>
-            </tr>
-          </table>
-          <a class="prices__sign-up" href="#">Записаться</a>
-        </li>
-        <li class="prices__item">
-          <p class="prices__level">
-            <span>Уровень</span>
-            Мастер
-          </p>
-          <table class="prices__table">
-            <tr>
-              <td>пн</td>
-              <td>20:00&mdash;21:30</td>
-            </tr>
-            <tr>
-              <td>ср</td>
-              <td>20:00&mdash;21:30</td>
-            </tr>
-            <tr>
-              <td>пт</td>
-              <td>20:00&mdash;21:30</td>
-            </tr>
-          </table>
-          <a class="prices__sign-up" href="#">Записаться</a>
-        </li>
-      </ul>
-    </section>
-    <section class="classes">
-      <h2 class="classes__title">&mdash; Как проходят занятия</h2>
-      <ul class="classes__list">
-        <li class="classes__item">
-          <h3 class="classes__item-title">Дыхательные техники</h3>
-          <p class="classes__item-text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
-            сфокусировать сознание на мышцах тела</p>
-        </li>
-        <li class="classes__item">
-          <h3 class="classes__item-title">Разминка</h3>
-          <p class="classes__item-text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
-            сфокусировать сознание на мышцах тела</p>
-        </li>
-        <li class="classes__item">
-          <h3 class="classes__item-title">Основной блок</h3>
-          <p class="classes__item-text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
-            сфокусировать сознание на мышцах тела</p>
-        </li>
-        <li class="classes__item">
-          <h3 class="classes__item-title">Стрейчинг</h3>
-          <p class="classes__item-text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
-            сфокусировать сознание на мышцах тела</p>
-        </li>
-      </ul>
-    </section>
-    <section class="comments">
-      <h2 class="comments__title">&mdash; Отзывы</h2>
-      <button class="comments__arrow-left">Влево</button>
-      <button class="comments__arrow-right">Вправо</button>
-      <div class="comments__toogles">
-        <input class="comments__toogle" type="radio" name="toogle">
-        <input class="comments__toogle" type="radio" name="toogle">
-        <input class="comments__toogle" type="radio" name="toogle">
-      </div>
-      <div class="comments__container slider">
-        <div class="comments__item slider__item">
-          <span class="comments__author">Вероника Кулешова</span>
-          <span class="comments__author-age">25 лет</span>
-          <ul class="comments__author-links">
-            <li><a class="comments__author-link" href="#">VK</a></li>
-            <li><a class="comments__author-link" href="#">IG</a></li>
-          </ul>
-          <p class="comments__text">Хожу на пилатес уже 5 месяцев. После 10 занятий уже увидела результат: тело
-            подтянулось, улучшилась осанка, появился пресс.</p>
-        </div>
-        <div class="comments__item slider__item">
-          <span class="comments__author">Вероника Кулешова</span>
-          <span class="comments__author-age">25 лет</span>
-          <ul class="comments__author-links">
-            <li><a class="comments__author-link" href="#">VK</a></li>
-            <li><a class="comments__author-link" href="#">IG</a></li>
-          </ul>
-          <p class="comments__text">Хожу на пилатес уже 5 месяцев. После 10 занятий уже увидела результат: тело
-            подтянулось, улучшилась осанка, появился пресс.</p>
-        </div>
-        <div class="comments__item slider__item">
-          <span class="comments__author">Вероника Кулешова</span>
-          <span class="comments__author-age">25 лет</span>
-          <ul class="comments__author-links">
-            <li><a class="comments__author-link" href="#">VK</a></li>
-            <li><a class="comments__author-link" href="#">IG</a></li>
-          </ul>
-          <p class="comments__text">Хожу на пилатес уже 5 месяцев. После 10 занятий уже увидела результат: тело
-            подтянулось, улучшилась осанка, появился пресс.</p>
-        </div>
-      </div>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">&mdash; Контакты</h2>
-      <picture>
-        <source type="image/webp" media="(min-width: 960px)"
-          srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 660px)"
-          srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-        <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-        <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x"
-          alt="Схема проезда">
-      </picture>
-      <div class="contacts__map-marker"></div>
-      <div class="contacts__map-interactive" id="map"></div>
-      <div class="contacts__container">
-        <div class="contacts__address">
-          <h3>Адрес</h3>
-          <p class="contacts__address-text">г. Кропоткин, ул. Дугинец, 10а</p>
-        </div>
-        <div class="contacts__phone">
-          <h3>Телефон</h3>
-          <address class="contacts__phone-text">+7 918 365 07 07</address>
-        </div>
-        <div class="contacts__email">
-          <h3>Email</h3>
-          <a class="contacts__email-text" href="mailto:pilatesplus@gmail.co">pilatesplus@gmail.co</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__container">
-      <p class="page-footer__copyright">Pilates Plus, 2019 &copy;</p>
-      <a class="page-footer__logo" href="#"></a>
-      <ul class="page-footer__social">
-        <li><a class="page-footer__social-item"></a></li>
-        <li><a class="page-footer__social-item"></a></li>
-        <li><a class="page-footer__social-item"></a></li>
-      </ul>
-    </div>
-  </footer>
+  <main class="page-main"></main>
+  <footer class="page-footer"></footer>
   <script src="js/script.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svg4everybody.min.js"></script>
