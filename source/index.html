@@ -17,7 +17,8 @@
     <div class="page-header__top">
       <a class="page-header__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
+          <source type="image/webp" media="(min-width: 744px)" srcset="img/logo-tablet.webp">
+          <source type="image/webp" srcset="img/logo-mob.webp">
           <source media="(min-width: 744px)" srcset="img/logo-tablet.png">
           <img class="page-header__logo-img" src="img/logo-mob.png">
         </picture>
@@ -30,38 +31,62 @@
     </div>
     <div class="page-header__title">
       <div class="page-header__title-container">
-        <h1><span>Сбор трав</span>Шведская горечь</h1>
-        <p class="page-header__title-description">Не имеет аналогов в мире по оздоровительной силе и широте лечебных
-          свойств</p>
-      </div>
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/pack-desktop.webp">
-        <source type="image/webp" media="(min-width: 744px)" srcset="img/pack-tablet.webp">
-        <source type="image/webp" srcset="img/pack-mob.webp">
-        <source media="(min-width: 1200px)" srcset="img/pack-desktop.jpg">
-        <source media="(min-width: 744px)" srcset="img/pack-tablet.jpg">
-        <img class="page-header__title-img" src="img/pack-mob.jpg" alt="Фотогорафия упаковки Шведская горечь">
-      </picture>
-    </div>
-    <div class="page-header__more">
-      <a class="page-header__more-link" href="more-info.html">Узнать больше</a>
-      <form class="more-info" action="https://echo.test.ru/" method="post">
-        <div class="more-info__container">
-          <p class="more-info__text">Узнайте подробнее о бальзаме</p>
-          <div class="more-info__inputs">
-            <label class="more-info__name">
-              <input class="more-info__input" type="text" placeholder="Имя">
-            </label>
-            <label class="more-info__tel">
-              <input class="more-info__input" type="tel" placeholder="Телефон">
-            </label>
-          </div>
-          <button class="more-info__button" type="submit">Узнать</button>
+        <div class="page-header__title-text">
+          <h1><span>Сбор трав</span>Шведская горечь</h1>
+          <p class="page-header__title-description">Не имеет аналогов в мире по оздоровительной силе и широте лечебных
+            свойств</p>
         </div>
-      </form>
+        <picture>
+          <source type="image/webp" media="(min-width: 744px)" srcset="img/pack-tablet.webp">
+          <source type="image/webp" srcset="img/pack-mob.webp">
+          <source media="(min-width: 744px)" srcset="img/pack-tablet.jpg">
+          <img class="page-header__title-img" src="img/pack-mob.jpg" alt="Фотогорафия упаковки Шведская горечь">
+        </picture>
+        <div class="page-header__more">
+          <a class="page-header__more-link" href="more-info.html">Узнать больше</a>
+          <form class="more-info" action="https://echo.test.ru/" method="post">
+            <div class="more-info__container">
+              <p class="more-info__text">Узнайте подробнее о бальзаме</p>
+              <div class="more-info__inputs">
+                <label class="more-info__name">
+                  <input class="more-info__input" type="text" placeholder="Имя">
+                </label>
+                <label class="more-info__tel">
+                  <input class="more-info__input" type="tel" placeholder="Телефон">
+                </label>
+              </div>
+              <button class="more-info__button" type="submit">Узнать</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </header>
-  <main class="page-main"></main>
+  <main class="page-main">
+    <section class="facts">
+      <h2 class="visually-hidden">Факты</h2>
+      <div class="facts__container">
+        <ul class="facts__list">
+          <li class="facts__item">
+            <h3 class="facts__item-title">1978 г.</h3>
+            <p class="facts__item-text">Европейцы используют шведскую горечь еще с 1978 года</p>
+          </li>
+          <li class="facts__item">
+            <h3 class="facts__item-title">104 года</h3>
+            <p class="facts__item-text">104 года прожил автор бальзама</p>
+          </li>
+          <li class="facts__item">
+            <h3 class="facts__item-title">40 показаний</h3>
+            <p class="facts__item-text">Больше 40 показаний к применению</p>
+          </li>
+          <li class="facts__item">
+            <h3 class="facts__item-title">24 языка</h3>
+            <p class="facts__item-text">8 млн книг на 24 языках продано о бальзаме</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
   <footer class="page-footer"></footer>
   <script src="js/script.js"></script>
   <script src="js/picturefill.min.js"></script>
