@@ -1,0 +1,79 @@
+.comment-window {
+  padding: 0 10px;
+
+  background-color: #f6f9f3;
+}
+
+.comment-window__container {
+  position: relative;
+
+  width: 300px;
+  margin: 0 auto;
+  padding: 38px 16px 40px 20px;
+
+  border: 1px solid #c5dab5;
+}
+
+.comment-window__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.comment-window-link {
+  position: absolute;
+  left: 30%;
+  bottom: -7px;
+  z-index: 100;
+
+  width: 120px;
+
+  font-size: 14px;
+  line-height: 14px;
+  color: #7eb152;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+
+  background-color: #f6f9f3;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    position: relative;
+
+    min-height: 710px;
+    margin-bottom: 40px;
+
+    background-color: #a4c58c;
+    background-image: url("../../img/human.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  .comment-window {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+
+    margin-left: -208px;
+    width: 416px;
+    padding: 20px;
+  }
+
+  .comment-window__container {
+    width: auto;
+    margin: auto;
+    padding: 38px 16px 40px 20px;
+
+
+  }
+
+  .comment-window__text {
+    width: 300px;
+    margin: 0 auto;
+
+    font-size: 16px;
+  }
+}
