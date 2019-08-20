@@ -65,6 +65,8 @@
 
 .symptoms__link-container {
   display: block;
+  max-width: 560px;
+  margin: 0 auto;
   padding: 19px 10px;
 
   text-align: center;
@@ -143,10 +145,22 @@
       background-image: url("../../img/arrow.png");
       background-repeat: no-repeat;
     }
+
+    &:hover {
+      background-color: #83cb47;
+    }
+
+    &:active {
+      background-color: #7eb252;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .symptoms {
+    padding-top: 70px;
+  }
+
   .symptoms__title {
     width: 1200px;
     margin: 0 auto;
@@ -154,9 +168,12 @@
   }
 
   .symptoms__title-container {
-    width: 430px;
+    width: 540px;
     padding-left: 80px;
+    padding-bottom: 45px;
 
+    font-size: 40px;
+    line-height: 50px;
     text-align: left;
   }
 
@@ -177,7 +194,7 @@
     justify-content: flex-end;
     width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .symptoms__link-container {
