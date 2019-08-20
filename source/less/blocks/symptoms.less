@@ -63,7 +63,7 @@
   font-weight: 600;
 }
 
-.symptoms__link {
+.symptoms__link-container {
   display: block;
   padding: 19px 10px;
 
@@ -124,7 +124,7 @@
     padding-left: 40px;
   }
 
-  .symptoms__link {
+  .symptoms__link-container {
     position: relative;
 
     width: 416px;
@@ -143,5 +143,44 @@
       background-image: url("../../img/arrow.png");
       background-repeat: no-repeat;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .symptoms__title {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .symptoms__title-container {
+    width: 430px;
+    padding-left: 80px;
+
+    text-align: left;
+  }
+
+  .symptoms__lists {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .symptoms__first-list,
+  .symptoms__second-list {
+    width: 670px;
+  }
+
+  .symptoms__link {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .symptoms__link-container {
+    margin: 0;
   }
 }
