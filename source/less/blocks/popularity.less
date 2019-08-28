@@ -88,3 +88,70 @@
 .popularity__description-link span {
   display: none;
 }
+
+@media (min-width: @tablet-width) {
+  .popularity__question {
+    width: 540px;
+    margin: 0 auto;
+  }
+
+  .popularity__description {
+    position: relative;
+  }
+
+  .popularity__description-box {
+    min-height: 642px;
+  }
+
+  .popularity__description-window {
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+
+    width: 600px;
+    margin-left: -300px;
+    padding: 20px;
+
+    background-color: #ffffff;
+  }
+
+  .popularity__description-container {
+    border: 1px solid #c5dab5;
+  }
+
+  .popularity__description-link span {
+    display: inline;
+  }
+
+  .popularity__description-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 41%;
+      right: 10%;
+      width: 32px;
+      height: 8px;
+      background-image: url(../../img/arrow.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popularity__container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .popularity__question {
+    width: 500px;
+  }
+
+  .popularity__description {
+    width: 600px;
+  }
+}
