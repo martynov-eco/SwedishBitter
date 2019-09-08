@@ -51,7 +51,7 @@
 }
 
 .popularity__description-box {
-  min-height: 244px;
+  height: 244px;
 
   background-image: url("../../img/girl-mob.jpg");
   background-repeat: no-repeat;
@@ -90,8 +90,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .popularity__title {
+    width: 590px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popularity__list-title {
+    font-size: 14px;
+  }
+
+  .popularity__item {
+    font-size: 16px;
+  }
+
   .popularity__question {
-    width: 540px;
+    width: 600px;
     margin: 0 auto;
   }
 
@@ -100,12 +115,14 @@
   }
 
   .popularity__description-box {
-    min-height: 642px;
+    height: 642px;
+
+    background-image: url("../../img/girl-tablet.jpg");
   }
 
   .popularity__description-window {
     position: absolute;
-    bottom: -42px;
+    bottom: -72px;
     left: 50%;
 
     width: 600px;
@@ -116,7 +133,16 @@
   }
 
   .popularity__description-container {
+    width: 561px;
+
     border: 1px solid #c5dab5;
+  }
+
+  .popularity__description-text {
+    width: 455px;
+
+    font-size: 16px;
+    text-align: left;
   }
 
   .popularity__description-link span {
@@ -126,20 +152,30 @@
   .popularity__description-link {
     position: relative;
 
+    font-size: 14px;
+
     &::before {
       content: "";
       position: absolute;
       top: 41%;
-      right: 10%;
+      right: 6%;
       width: 32px;
       height: 8px;
-      background-image: url(../../img/arrow.png);
+      background-image: url("../../img/arrow.png");
       background-repeat: no-repeat;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .popularity {
+    padding-top: 0;
+
+    background-image: url("../../img/girl-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
   .popularity__container {
     display: flex;
     flex-direction: row-reverse;
@@ -151,7 +187,32 @@
     width: 500px;
   }
 
+  .popularity__title {
+    width: 472px;
+
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+  }
+
+  .popularity__list-title {
+    padding: 50px 0;
+    text-align: left;
+  }
+
   .popularity__description {
     width: 600px;
+  }
+
+  .popularity__description-box {
+    background-image: none;
+  }
+
+  .popularity__description-window {
+    margin-left: -299px;
+  }
+
+  .popularity__item {
+    margin: 0 0 50px 0;
   }
 }
